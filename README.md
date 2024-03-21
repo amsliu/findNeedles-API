@@ -10,3 +10,5 @@ document is an experienced Java programmer.
 questions to the person who wrote the code.
 Suggest ways to improve the code, for example,
 to reduce memory usage or enhance features.
+
+The code sample for this function is available in the file: findNeedles.Java.
