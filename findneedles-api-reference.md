@@ -1,7 +1,7 @@
 ---
 title: "Overview of findNeedles APIs"
 description: "API reference documentation for the Java function findNeedles"
-author: "AmsonLiu"
+author: "Amson Liu"
 doc_type: API_reference
 date: 03/20/2024
 ---
