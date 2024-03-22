@@ -1,12 +1,12 @@
 ---
-title: "Overview of findNeedles APIs"
+title: "Overview of the findNeedles API"
 description: "API reference documentation for the Java function findNeedles"
 author: "Amson Liu"
 doc_type: API_reference
-date: 03/20/2024
+date: 03/22/2024
 ---
 
-# Overview of findNeedles APIs
+# Overview of the findNeedles API
 
 findNeedles is a Java function that prints a certain output depending on your input. There are a few important parameters to consider. 
 
@@ -15,9 +15,9 @@ findNeedles is a Java function that prints a certain output depending on your in
 
 Consider the scenario where you input more than five words in the paramenter needles. The function will print the error message *"Too many words!"* because the length of needles has exceeded five words.
 
-If else, the parameter haystack is split into an array of words and compared to the words in the parameter needles. The countArray variable specifies how many times a word in haystack appears in needles, and the  for loop counts the number of matches in haystack. The function will then print out each word in needles and the number of matches in haystack.
+If else, the parameter haystack is split into an array of words and compared to the words in the parameter needles. The countArray variable specifies how many times a word in haystack appears in needles, and the for loop counts the number of matches in haystack. The function will then print out each word in needles and the number of matches in haystack.
 
-For example, when you input haystack = "I like to play soccer" and needles = "soccer player", the expected outcome will print:
+For example, when you input haystack = "I like to play soccer" and needles = "soccer player", the function will print:
 
 soccer: 1 <br>
 player: 0
@@ -26,7 +26,7 @@ player: 0
 > With the exception of whitespace, this function does not disregard special characters when comparing a word in haystack with a word in needles. For example, if you input the *"Hello!"* in haystack, this function will not consider it to be an match with *"Hello"* in needles.
 
 ```json
-⁄⁄Sample snippet for the API code
+//Sample snippet for the API code
 
 public static void findNeedles(String haystack, String[] needles){
 if(needles.length > 5){
