@@ -8,7 +8,7 @@ date: 03/22/2024
 
 # Overview of the findNeedles API
 
-findNeedles is a Java function that prints a certain output depending on your input. There are a few important parameters to consider. 
+findNeedles is a Java function that prints a certain output depending on your input. There are a few important parameters to consider.
 
 1) **haystack** - This is a string input of word(s).
 2) **needles** - This is a string array input that stores up to five words.
@@ -26,31 +26,27 @@ player: 0
 > With the exception of whitespace, this function does not disregard special characters when comparing a word in haystack with a word in needles. For example, if you input the *"Hello!"* in haystack, this function will not consider it to be an match with *"Hello"* in needles.
 
 ```json
-//Sample snippet for the API code
+// Sample snippet for the API code.
 
 public static void findNeedles(String haystack, String[] needles){
 if(needles.length > 5){
-	System.err.println("Too many words!");
+ System.err.println("Too many words!");
 }
 
 else{
-	int[] countArray = new int[needles.length];
-	for(int i = 0; i < needles.length; i++){
-		String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0);
-		for(int j = 0; j < words.length; j++){
-			if(words[j].compareTo(needles[i]) == 0){
-				countArray[i]++;
-			}
-		}
-	}
-	for (int j = 0; j < needles.length; j++) {
-		System.out.println(needles[j] + ": " + countArray[j]);
-	}
+ int[] countArray = new int[needles.length];
+ for(int i = 0; i < needles.length; i++){
+  String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0);
+  for(int j = 0; j < words.length; j++){
+   if(words[j].compareTo(needles[i]) == 0){
+    countArray[i]++;
+   }
+  }
+ }
+ for (int j = 0; j < needles.length; j++) {
+  System.out.println(needles[j] + ": " + countArray[j]);
+ }
 }
 }
 
 ```
-
-
-
-
